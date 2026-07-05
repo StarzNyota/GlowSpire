@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Glowspire ✨</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        ✨ Glowspire
+
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="wellness.html">Wellness</a>
+        <a href="beauty.html">Beauty</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="music.html">Music</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+
+    </nav>
+
+    <div class="nav-buttons">
+
+        <button id="darkModeBtn" class="dark-btn">
+            🌙
+        </button>
+
+        <a href="login.html" class="btn secondary">
+            Log In
+        </a>
+
+        <a href="signup.html" class="btn primary">
+            Sign Up
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="page-hero">
+
+    <h1>👤 My Dashboard</h1>
+
+    <p>
+
+        Track your progress and celebrate your achievements.
+
+    </p>
+
+</section>
+
+<!-- ================= PROFILE ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <img src="images/default-profile.png"
+             alt="Profile Picture"
+             class="profile-picture">
+
+        <h2 id="username">
+
+            Guest
+
+        </h2>
+
+        <p>
+
+            Welcome back to Glowspire! ✨
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= LEVEL ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>⭐ Level</h2>
+
+        <h1 id="level">
+
+            1
+
+        </h1>
+
+        <p>
+
+            XP:
+            <span id="xp">
+
+                0
+
+            </span>
+            /100
+
+        </p>
+
+        <div class="progress-bar">
+
+            <div
+                class="progress-fill"
+                id="xpBar">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= DAILY STREAK ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>🔥 Daily Streak</h2>
+
+        <h1 id="streak">
+
+            0 Days
+
+        </h1>
+
+        <p>
+
+            Visit Glowspire every day to keep your streak alive!
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>🏆 Achievements</h2>
+
+        <div class="badge-grid">
+
+            <div class="badge">
+                🎀<br>Welcome
+            </div>
+
+            <div class="badge">
+                📚<br>Study Starter
+            </div>
+
+            <div class="badge">
+                🌿<br>Healthy Habits
+            </div>
+
+            <div class="badge">
+                💄<br>Beauty Lover
+            </div>
+
+            <div class="badge">
+                👗<br>Fashion Fan
+            </div>
+
+            <div class="badge">
+                🎵<br>Music Lover
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= DAILY CHALLENGE ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>🎯 Today's Challenge</h2>
+
+        <p id="dailyChallenge">
+
+            Complete one study session!
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>📊 My Stats</h2>
+
+        <ul class="tips">
+
+            <li>⭐ Total XP: <span id="totalXP">0</span></li>
+            <li>🏆 Badges Earned: <span id="badgeCount">0</span></li>
+            <li>🔥 Current Streak: <span id="currentStreak">0</span> Days</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Glowspire ✨
+
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/rewards.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
