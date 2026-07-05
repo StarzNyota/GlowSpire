@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Wellness | Glowspire ✨</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        ✨ Glowspire
+
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="wellness.html" class="active">Wellness</a>
+        <a href="beauty.html">Beauty</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="music.html">Music</a>
+        <a href="dashboard.html">Dashboard</a>
+
+    </nav>
+
+    <div class="nav-buttons">
+
+        <button id="darkModeBtn" class="dark-btn">
+
+            🌙
+
+        </button>
+
+        <a href="login.html" class="btn secondary">
+
+            Log In
+
+        </a>
+
+        <a href="signup.html" class="btn primary">
+
+            Sign Up
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="page-hero">
+
+    <h1>🌿 Wellness Hub</h1>
+
+    <p>
+
+        Build healthy habits one day at a time.
+
+    </p>
+
+</section>
+
+<!-- ================= WATER ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>💧 Water Tracker</h2>
+
+        <h1 id="waterCount">
+
+            0 / 8 Glasses
+
+        </h1>
+
+        <button id="addWater"
+                class="btn primary">
+
+            +1 Glass
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= MOOD ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>😊 Mood Check</h2>
+
+        <p>How are you feeling today?</p>
+
+        <div class="emoji-grid">
+
+            <button>😁</button>
+            <button>😊</button>
+            <button>😐</button>
+            <button>😔</button>
+            <button>😭</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SLEEP ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>😴 Sleep Tracker</h2>
+
+        <input
+            type="number"
+            id="sleepHours"
+            min="0"
+            max="24"
+            placeholder="Hours slept">
+
+        <button
+            class="btn primary"
+            id="saveSleep">
+
+            Save
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= SELF CARE ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>🌸 Self-Care Checklist</h2>
+
+        <label><input type="checkbox"> 💧 Drink Water</label><br>
+
+        <label><input type="checkbox"> 🚶 Go for a Walk</label><br>
+
+        <label><input type="checkbox"> 🧘 Stretch</label><br>
+
+        <label><input type="checkbox"> 📖 Read for 15 Minutes</label><br>
+
+        <label><input type="checkbox"> 😴 Sleep 8 Hours</label>
+
+    </div>
+
+</section>
+
+<!-- ================= BREATHING ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>🧘 Breathing Exercise</h2>
+
+        <p>
+
+            Breathe in for 4 seconds.<br>
+            Hold for 4 seconds.<br>
+            Breathe out for 4 seconds.<br>
+
+            Repeat 5 times.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= DAILY CHALLENGE ================= -->
+
+<section class="challenge-section">
+
+    <div class="challenge-card">
+
+        <h2>🎯 Today's Wellness Challenge</h2>
+
+        <p>
+
+            Drink 8 glasses of water today!
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Glowspire ✨
+
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/rewards.js"></script>
+
+</body>
+
+</html>
