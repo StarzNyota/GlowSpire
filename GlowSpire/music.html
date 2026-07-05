@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Fashion | Glowspire ✨</title>
+    <title>Music | Glowspire ✨</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -31,8 +31,8 @@
         <a href="study.html">Study</a>
         <a href="wellness.html">Wellness</a>
         <a href="beauty.html">Beauty</a>
-        <a href="fashion.html" class="active">Fashion</a>
-        <a href="music.html">Music</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="music.html" class="active">Music</a>
         <a href="dashboard.html">Dashboard</a>
 
     </nav>
@@ -59,32 +59,72 @@
 
 <section class="page-hero">
 
-    <h1>👗 Fashion Studio</h1>
+    <h1>🎵 Music Hub</h1>
 
     <p>
 
-        Discover cute outfits, trending styles, and build your dream wardrobe.
+        Discover playlists that help you study, relax, stay motivated, and brighten your day.
 
     </p>
 
 </section>
 
-<!-- ================= STYLE CATEGORIES ================= -->
+<!-- ================= PLAYLISTS ================= -->
 
 <section class="feature-section">
 
     <div class="feature-card">
 
-        <h2>🎀 Popular Aesthetics</h2>
+        <h2>🎧 Spotify Playlists</h2>
 
-        <div class="style-grid">
+        <p>Choose a playlist to match your mood.</p>
 
-            <div class="style-card">🎀 Coquette</div>
-            <div class="style-card">🤍 Clean Girl</div>
-            <div class="style-card">🌸 Soft Girl</div>
-            <div class="style-card">💖 Pink Princess</div>
-            <div class="style-card">🩰 Balletcore</div>
-            <div class="style-card">✨ Old Money</div>
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>📚 Study</h3>
+
+                <iframe
+                    style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8NTLI2TtZa6"
+                    width="100%"
+                    height="152"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
+
+            </div>
+
+            <div class="feature-card">
+                <h3>🌙 Chill</h3>
+
+                <iframe
+                    style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZeKCadgRdKQ"
+                    width="100%"
+                    height="152"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
+
+            </div>
+
+            <div class="feature-card">
+                <h3>💖 Pop</h3>
+
+                <iframe
+                    style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"
+                    width="100%"
+                    height="152"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
+
+            </div>
 
         </div>
 
@@ -92,107 +132,47 @@
 
 </section>
 
-<!-- ================= OUTFIT IDEAS ================= -->
+<!-- ================= FAVORITES ================= -->
 
 <section class="feature-section">
 
     <div class="feature-card">
 
-        <h2>🌷 Outfit Inspiration</h2>
-
-        <ul class="tips">
-
-            <li>👚 Cute cardigan + pleated skirt</li>
-            <li>👟 Oversized hoodie + sneakers</li>
-            <li>🩷 Pink sweater + jeans</li>
-            <li>🩰 White dress + bow accessories</li>
-            <li>✨ Neutral outfit + gold jewelry</li>
-
-        </ul>
-
-    </div>
-
-</section>
-
-<!-- ================= FAVORITE OUTFIT ================= -->
-
-<section class="feature-section">
-
-    <div class="feature-card">
-
-        <h2>❤️ Outfit of the Day</h2>
-
-        <p>
-
-            Soft pink cardigan, white pleated skirt, ribbon hair bow, white sneakers, and a cute mini bag.
-
-        </p>
-
-    </div>
-
-</section>
-
-<!-- ================= SHEIN PICKS ================= -->
-
-<section class="feature-section">
-
-    <div class="feature-card">
-
-        <h2>🛍️ My SHEIN Picks</h2>
-
-        <p>
-
-            Shop my favorite outfits and accessories!
-
-        </p>
-
-        <p>
-
-            Enter creator code:
-
-            <strong>TZ9EE</strong>
-
-        </p>
-
-        <a
-            href="https://onelink.shein.com/40/5uh2yus1rh2a"
-            target="_blank"
-            class="btn primary">
-
-            Shop My Collection
-
-        </a>
-
-        <p class="small-text">
-
-            Thank you for supporting Glowspire! 💖
-
-        </p>
-
-    </div>
-
-</section>
-
-<!-- ================= WISHLIST ================= -->
-
-<section class="feature-section">
-
-    <div class="feature-card">
-
-        <h2>💖 Fashion Wishlist</h2>
+        <h2>❤️ Favorite Songs</h2>
 
         <textarea
+            id="favoriteSongs"
             rows="6"
-            id="fashionWishlist"
-            placeholder="Write your fashion wishlist..."></textarea>
+            placeholder="Write your favorite songs or artists..."></textarea>
 
         <br>
 
         <button class="btn primary">
 
-            Save Wishlist
+            Save Favorites
 
         </button>
+
+    </div>
+
+</section>
+
+<!-- ================= MUSIC GOALS ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>🎯 Music Goals</h2>
+
+        <ul class="tips">
+
+            <li>🎧 Listen to a study playlist while doing homework.</li>
+            <li>🌸 Find one new favorite artist.</li>
+            <li>💖 Create your own Glowspire playlist.</li>
+            <li>🌙 Relax with calming music before bed.</li>
+
+        </ul>
 
     </div>
 
@@ -204,13 +184,21 @@
 
     <div class="challenge-card">
 
-        <h2>🎯 Fashion Challenge</h2>
+        <h2>🎯 Music Challenge</h2>
 
         <p>
 
-            Create an outfit using three colors you love!
+            Listen to a playlist for at least 30 minutes today!
 
         </p>
+
+        <button
+            id="completeChallenge"
+            class="btn primary">
+
+            Complete Challenge
+
+        </button>
 
     </div>
 
@@ -230,6 +218,7 @@
 
 <script src="js/script.js"></script>
 <script src="js/rewards.js"></script>
+<script src="js/challenges.js"></script>
 
 </body>
 
