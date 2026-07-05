@@ -1,0 +1,170 @@
+/* ===================================================
+   GLOWSPIRE ANIMATIONS
+=================================================== */
+
+/* ===============================
+   FADE IN ON LOAD
+================================= */
+
+body{
+    animation: pageLoad 0.8s ease-out;
+}
+
+@keyframes pageLoad{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===============================
+   FLOATING EFFECT
+================================= */
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+.feature-card,
+.quote-card,
+.challenge-card{
+    animation: float 6s ease-in-out infinite;
+}
+
+/* ===============================
+   BUTTON HOVER GLOW
+================================= */
+
+.btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.5),
+        transparent
+    );
+    transition:0.5s;
+}
+
+.btn:hover::after{
+    left:100%;
+}
+
+/* ===============================
+   CARD HOVER LIFT
+================================= */
+
+.feature-card,
+.quote-card,
+.challenge-card{
+    transition:transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-card:hover,
+.quote-card:hover,
+.challenge-card:hover{
+    transform:translateY(-10px) scale(1.01);
+}
+
+/* ===============================
+   FADE-IN SCROLL EFFECT
+================================= */
+
+.fade-in{
+    opacity:0;
+    transform:translateY(20px);
+    transition:all 0.8s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===============================
+   PULSE EFFECT (XP / IMPORTANT BUTTONS)
+================================= */
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.05);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+.pulse{
+    animation:pulse 2s infinite;
+}
+
+/* ===============================
+   GRADIENT BACKGROUND SHIFT
+================================= */
+
+@keyframes gradientMove{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+body{
+    background-size:300% 300%;
+    animation:gradientMove 12s ease infinite;
+}
+
+/* ===============================
+   DARK MODE TRANSITION SUPPORT
+================================= */
+
+body{
+    transition:background 0.5s ease, color 0.5s ease;
+}
+
+/* ===============================
+   SPARKLE EFFECT (OPTIONAL CLASS)
+================================= */
+
+.sparkle{
+    position:relative;
+}
+
+.sparkle::before{
+    content:"✨";
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    font-size:1rem;
+    animation:float 3s infinite;
+}
