@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study | Glowspire ✨</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        ✨ Glowspire
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="study.html" class="active">Study</a>
+        <a href="wellness.html">Wellness</a>
+        <a href="beauty.html">Beauty</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="music.html">Music</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <button id="darkModeBtn" class="dark-btn">🌙</button>
+
+        <a href="login.html" class="btn secondary">
+            Log In
+        </a>
+
+        <a href="signup.html" class="btn primary">
+            Sign Up
+        </a>
+    </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="page-hero">
+
+    <h1>📚 Study Zone</h1>
+
+    <p>
+        Everything you need to stay productive and reach your goals.
+    </p>
+
+</section>
+
+<!-- ================= POMODORO ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>⏲️ Pomodoro Timer</h2>
+
+        <h1 id="timer">25:00</h1>
+
+        <div class="button-group">
+
+            <button class="btn primary" id="startTimer">
+                Start
+            </button>
+
+            <button class="btn secondary" id="resetTimer">
+                Reset
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= HOMEWORK ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>📝 Homework Planner</h2>
+
+        <input
+            type="text"
+            id="homeworkInput"
+            placeholder="Add homework..."
+        >
+
+        <button class="btn primary" id="addHomework">
+            Add Homework
+        </button>
+
+        <ul id="homeworkList"></ul>
+
+    </div>
+
+</section>
+
+<!-- ================= NOTES ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>📖 Quick Notes</h2>
+
+        <textarea
+            id="studyNotes"
+            rows="8"
+            placeholder="Write your notes here..."
+        ></textarea>
+
+        <br>
+
+        <button class="btn primary" id="saveNotes">
+            Save Notes
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= STUDY TIPS ================= -->
+
+<section class="feature-section">
+
+    <div class="feature-card">
+
+        <h2>💡 Study Tips</h2>
+
+        <ul class="tips">
+
+            <li>📚 Review notes every day.</li>
+
+            <li>⏰ Study in 25-minute sessions.</li>
+
+            <li>💧 Drink water while studying.</li>
+
+            <li>📵 Put your phone away.</li>
+
+            <li>😴 Get enough sleep before tests.</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ================= DAILY CHALLENGE ================= -->
+
+<section class="challenge-section">
+
+    <div class="challenge-card">
+
+        <h2>🎯 Today's Challenge</h2>
+
+        <p>
+            Finish one Pomodoro session and earn XP!
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Glowspire ✨
+
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/rewards.js"></script>
+
+</body>
+
+</html>
