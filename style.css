@@ -389,3 +389,73 @@ textarea:focus{
 }
 
 }
+/* ================= AUTH PAGES ================= */
+
+.auth-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.auth-card h1 {
+    font-size: 2rem;
+    color: #ff7eb9;
+    margin-bottom: 10px;
+}
+
+.auth-card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.auth-card label {
+    font-weight: 600;
+}
+
+.auth-card input {
+    padding: 14px;
+    border-radius: 15px;
+    border: 2px solid #ffd6e7;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.auth-card input:focus {
+    border-color: #ff9ecf;
+}
+
+.auth-card button {
+    margin-top: 15px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-link {
+    margin-top: 20px;
+}
+
+.auth-link a {
+    color: #ff7eb9;
+    font-weight: bold;
+}
