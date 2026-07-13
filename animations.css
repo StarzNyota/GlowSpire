@@ -1,76 +1,89 @@
 /* ===================================================
-   GLOWSPIRE ANIMATIONS
+   GLOWSPIRE ANIMATIONS ✨🎀
 =================================================== */
 
-/* ===============================
-   FADE IN ON LOAD
-================================= */
-
-body{
-    animation: pageLoad 0.8s ease-out;
-}
-
-@keyframes pageLoad{
-    from{
-        opacity:0;
-        transform:translateY(10px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
 
 /* ===============================
-   FLOATING EFFECT
+   PAGE LOAD FADE IN
 ================================= */
 
-@keyframes float{
-    0%{
-        transform:translateY(0px);
-    }
-    50%{
-        transform:translateY(-10px);
-    }
-    100%{
-        transform:translateY(0px);
-    }
+body {
+    animation:
+        pageLoad 0.8s ease-out,
+        gradientMove 12s ease infinite;
 }
+
+
+@keyframes pageLoad {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/* ===============================
+   MOVING GRADIENT BACKGROUND
+================================= */
+
+body {
+    background-size: 300% 300%;
+}
+
+
+@keyframes gradientMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+
+/* ===============================
+   FLOATING CARDS
+================================= */
+
+@keyframes float {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
 
 .feature-card,
 .quote-card,
-.challenge-card{
-    animation: float 6s ease-in-out infinite;
+.challenge-card {
+
+    animation:
+        float 6s ease-in-out infinite;
+
 }
 
-/* ===============================
-   BUTTON HOVER GLOW
-================================= */
 
-.btn{
-    position:relative;
-    overflow:hidden;
-}
-
-.btn::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:-100%;
-    width:100%;
-    height:100%;
-    background:linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.5),
-        transparent
-    );
-    transition:0.5s;
-}
-
-.btn:hover::after{
-    left:100%;
-}
 
 /* ===============================
    CARD HOVER LIFT
@@ -78,93 +91,359 @@ body{
 
 .feature-card,
 .quote-card,
-.challenge-card{
-    transition:transform 0.4s ease, box-shadow 0.4s ease;
+.challenge-card {
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+
 }
+
 
 .feature-card:hover,
 .quote-card:hover,
-.challenge-card:hover{
-    transform:translateY(-10px) scale(1.01);
+.challenge-card:hover {
+
+    transform:
+        translateY(-10px)
+        scale(1.02);
+
 }
+
+
 
 /* ===============================
-   FADE-IN SCROLL EFFECT
+   BUTTON SHINE EFFECT
 ================================= */
 
-.fade-in{
-    opacity:0;
-    transform:translateY(20px);
-    transition:all 0.8s ease;
+.btn {
+
+    position: relative;
+    overflow: hidden;
+
 }
 
-.fade-in.show{
-    opacity:1;
-    transform:translateY(0);
-}
 
-/* ===============================
-   PULSE EFFECT (XP / IMPORTANT BUTTONS)
-================================= */
+.btn::after {
 
-@keyframes pulse{
-    0%{
-        transform:scale(1);
-    }
-    50%{
-        transform:scale(1.05);
-    }
-    100%{
-        transform:scale(1);
-    }
-}
+    content:"";
 
-.pulse{
-    animation:pulse 2s infinite;
-}
-
-/* ===============================
-   GRADIENT BACKGROUND SHIFT
-================================= */
-
-@keyframes gradientMove{
-    0%{
-        background-position:0% 50%;
-    }
-    50%{
-        background-position:100% 50%;
-    }
-    100%{
-        background-position:0% 50%;
-    }
-}
-
-body{
-    background-size:300% 300%;
-    animation:gradientMove 12s ease infinite;
-}
-
-/* ===============================
-   DARK MODE TRANSITION SUPPORT
-================================= */
-
-body{
-    transition:background 0.5s ease, color 0.5s ease;
-}
-
-/* ===============================
-   SPARKLE EFFECT (OPTIONAL CLASS)
-================================= */
-
-.sparkle{
-    position:relative;
-}
-
-.sparkle::before{
-    content:"✨";
     position:absolute;
-    top:-10px;
-    right:-10px;
-    font-size:1rem;
-    animation:float 3s infinite;
+
+    top:0;
+    left:-120%;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.6),
+        transparent
+    );
+
+    transition:.6s;
+
+}
+
+
+.btn:hover::after {
+
+    left:120%;
+
+}
+
+
+
+/* ===============================
+   FADE IN SCROLL
+================================= */
+
+.fade-in {
+
+    opacity:0;
+
+    transform:
+    translateY(25px);
+
+    transition:
+    all .8s ease;
+
+}
+
+
+.fade-in.show {
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+}
+
+
+
+/* ===============================
+   PULSE EFFECT
+================================= */
+
+@keyframes pulse {
+
+    0%,100% {
+
+        transform:
+        scale(1);
+
+    }
+
+    50% {
+
+        transform:
+        scale(1.05);
+
+    }
+
+}
+
+
+.pulse {
+
+    animation:
+    pulse 2s infinite;
+
+}
+
+
+
+/* ===================================================
+   COQUETTE BOWS 🎀
+=================================================== */
+
+
+.ribbon-bow {
+
+    position:fixed;
+
+    width:90px;
+
+    opacity:.85;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    filter:
+    drop-shadow(
+    0 8px 12px
+    rgba(255,182,217,.35)
+    );
+
+    animation:
+    ribbonFloat 6s ease-in-out infinite;
+
+}
+
+
+
+.bow-left {
+
+    top:130px;
+
+    left:25px;
+
+}
+
+
+
+.bow-right {
+
+    bottom:100px;
+
+    right:25px;
+
+    animation-delay:3s;
+
+}
+
+
+
+@keyframes ribbonFloat {
+
+    0%,100% {
+
+        transform:
+        translateY(0)
+        rotate(-5deg);
+
+    }
+
+    50% {
+
+        transform:
+        translateY(-18px)
+        rotate(5deg);
+
+    }
+
+}
+
+
+
+/* ===============================
+   LACE BORDER 🩰
+================================= */
+
+
+.lace {
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:25px;
+
+    z-index:20;
+
+
+    background:
+
+    radial-gradient(
+    circle at 12px 0,
+    #fff0f6 12px,
+    transparent 13px
+    );
+
+
+    background-size:
+    24px 24px;
+
+
+    border-bottom:
+    2px solid #ffd6e7;
+
+}
+
+
+
+/* ===============================
+   SPARKLES ✨
+================================= */
+
+
+.sparkle,
+.coquette-sparkle {
+
+    position:fixed;
+
+    color:#ffd6e7;
+
+    font-size:20px;
+
+    pointer-events:none;
+
+    animation:
+    sparkleFloat 5s ease-in-out infinite;
+
+}
+
+
+
+@keyframes sparkleFloat {
+
+    0%,100% {
+
+        opacity:.4;
+
+        transform:
+        translateY(0);
+
+    }
+
+
+    50% {
+
+        opacity:1;
+
+        transform:
+        translateY(-18px);
+
+    }
+
+}
+
+
+
+/* ===============================
+   DARK MODE SMOOTH TRANSITION 🌙
+================================= */
+
+
+body {
+
+    transition:
+
+    background .5s ease,
+
+    color .5s ease;
+
+}
+
+
+.navbar,
+.card,
+.feature-card,
+.quote-card,
+.challenge-card,
+.auth-card {
+
+    transition:
+
+    background .5s ease,
+
+    color .5s ease;
+
+}
+
+
+
+/* ===============================
+   IMAGE HOVER
+================================= */
+
+
+img {
+
+    transition:
+    transform .4s ease;
+
+}
+
+
+img:hover {
+
+    transform:
+    scale(1.05);
+
+}
+
+
+
+/* ===============================
+   MOBILE SMOOTHNESS
+================================= */
+
+@media(max-width:600px){
+
+    .ribbon-bow {
+
+        width:65px;
+
+    }
+
 }
