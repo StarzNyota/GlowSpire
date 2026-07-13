@@ -478,3 +478,41 @@ textarea:focus{
 .dark-mode p {
     color: #eee;
 }
+/* ================= DARK MODE ================= */
+
+body.dark {
+    background: #1e1b2e;
+    color: #fce7f3;
+}
+
+body.dark .navbar {
+    background: rgba(40, 35, 60, 0.85);
+}
+
+body.dark .feature-card,
+body.dark .quote-card,
+body.dark .challenge-card,
+body.dark .auth-card {
+    background: rgba(55, 45, 75, 0.85);
+    color: white;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+    color: #ffd6e7;
+}
+
+body.dark p {
+    color: #f5e9f2;
+}
+
+body.dark a {
+    color: #ffb6d9;
+}
+
+body.dark input {
+    background: #2b2438;
+    color: white;
+    border-color: #ffb6d9;
+}
