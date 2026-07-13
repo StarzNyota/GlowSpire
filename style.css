@@ -459,3 +459,22 @@ textarea:focus{
     color: #ff7eb9;
     font-weight: bold;
 }
+/* DARK MODE */
+
+.dark-mode {
+    background: #1e1b2e;
+    color: #fce7f3;
+}
+
+.dark-mode .navbar,
+.dark-mode .auth-card,
+.dark-mode .feature-card,
+.dark-mode .quote-card,
+.dark-mode .challenge-card {
+    background: rgba(40, 35, 60, 0.8);
+    color: white;
+}
+
+.dark-mode p {
+    color: #eee;
+}
