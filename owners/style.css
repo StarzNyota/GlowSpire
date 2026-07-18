@@ -17,7 +17,7 @@ body {
 
 .login-container {
 
-    width: 380px;
+    width: 400px;
 
     background: white;
 
@@ -27,8 +27,7 @@ body {
 
     text-align: center;
 
-    box-shadow:
-    0 15px 35px #ba5f9a;
+    box-shadow: 0 15px 35px #ba5f9a;
 
 }
 
@@ -69,6 +68,13 @@ h2 {
 }
 
 
+.card h3 {
+
+    color: #ba5f77;
+
+}
+
+
 input {
 
     width: 85%;
@@ -96,8 +102,6 @@ button {
 
     color: white;
 
-    cursor: pointer;
-
 }
 
 
@@ -105,13 +109,11 @@ button:hover {
 
     background: #d16faf;
 
-    transform: scale(1.05);
-
 }
 
 
-.coming {
+.worker {
 
-    background: #f7d0e9;
+    background: #f792aa;
 
 }
