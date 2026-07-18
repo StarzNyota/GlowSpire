@@ -1,0 +1,348 @@
+/* =========================
+   GlowSpire Founder Dashboard
+   Nyota Founder Portal
+========================= */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family: 'Quicksand', Arial, sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f7d0e9,
+        #f589cd,
+        #f792aa
+    );
+
+    color: #ba5f77;
+
+    padding: 30px;
+
+}
+
+
+
+
+.dashboard {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+
+
+/* =========================
+   Header
+========================= */
+
+
+.hero {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 35px;
+
+    text-align: center;
+
+    box-shadow:
+    0 15px 35px rgba(186,95,154,0.35);
+
+    border: 4px solid #db91c1;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.hero h1 {
+
+    color: #ba5f9a;
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.hero h2 {
+
+    color: #d16faf;
+
+}
+
+
+
+.hero p {
+
+    color: #ba5f8b;
+
+    font-size: 18px;
+
+}
+
+
+
+
+
+/* =========================
+   Cards
+========================= */
+
+
+.card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+    0 10px 25px rgba(186,95,154,0.25);
+
+    border-left:
+
+    8px solid #f589cd;
+
+}
+
+
+
+
+
+.card h2 {
+
+    color: #ba5f9a;
+
+    font-size: 28px;
+
+}
+
+
+
+.card h3 {
+
+    color: #d67cb5;
+
+    margin-top: 25px;
+
+}
+
+
+
+
+
+.card p {
+
+    line-height: 1.6;
+
+}
+
+
+
+
+
+/* =========================
+   Lists
+========================= */
+
+
+ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+
+li {
+
+    background: #f7d0e9;
+
+    margin: 10px 0;
+
+    padding: 14px;
+
+    border-radius: 20px;
+
+    color: #ba5f77;
+
+    transition: .3s;
+
+}
+
+
+
+li:hover {
+
+    background: #f792c0;
+
+    transform: translateX(8px);
+
+    color: white;
+
+}
+
+
+
+
+
+/* =========================
+   Timeline
+========================= */
+
+
+.timeline {
+
+    border-left: 5px solid #f589cd;
+
+    padding-left: 25px;
+
+}
+
+
+
+.timeline h3 {
+
+    color: #ba5f9a;
+
+}
+
+
+
+
+/* =========================
+   Partnership Section
+========================= */
+
+
+.card h3::before {
+
+    content: "🎀 ";
+
+}
+
+
+
+
+/* =========================
+   Owner Controls
+========================= */
+
+
+.owner-controls {
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #f7d0e9,
+
+    #f792c0
+
+    );
+
+
+
+    border:
+
+    5px solid #ba5f9a;
+
+}
+
+
+
+
+.owner-controls h2 {
+
+    color:#ba5f77;
+
+}
+
+
+
+
+
+/* =========================
+   Motto
+========================= */
+
+
+.card:last-child {
+
+    text-align:center;
+
+}
+
+
+
+.card:last-child p {
+
+    font-style:italic;
+
+    font-size:18px;
+
+    color:#ba5f9a;
+
+}
+
+
+
+
+
+/* =========================
+   Mobile
+========================= */
+
+
+@media(max-width:700px){
+
+
+body{
+
+padding:15px;
+
+}
+
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+
+
+.card{
+
+padding:20px;
+
+}
+
+
+}
