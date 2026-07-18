@@ -1,192 +1,117 @@
-*{
-box-sizing:border-box;
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #f7d0e9,
+        #f589cd
+    );
 }
 
 
-body{
+.login-container {
 
-margin:0;
+    width: 380px;
 
-min-height:100vh;
+    background: white;
 
-display:flex;
+    padding: 40px;
 
-justify-content:center;
+    border-radius: 35px;
 
-align-items:center;
+    text-align: center;
 
-font-family:
-Arial,
-sans-serif;
-
-background:
-linear-gradient(
-135deg,
-#f7d0e9,
-#f589cd
-);
-
-overflow:hidden;
-
-}
-
-
-
-.login-container{
-
-width:390px;
-
-padding:40px;
-
-background:#ffffff;
-
-border-radius:35px;
-
-text-align:center;
-
-box-shadow:
-0 15px 35px rgba(186,95,154,0.35);
+    box-shadow:
+    0 15px 35px #ba5f9a;
 
 }
 
 
+h1 {
 
-h1{
+    color: #ba5f9a;
 
-font-size:45px;
-
-color:#ba5f9a;
-
-}
-
-
-
-h2{
-
-color:#d67cb5;
+    font-size: 45px;
 
 }
 
 
+h2 {
 
-.subtitle{
-
-color:#ba5f8b;
-
-}
-
-
-
-.portal-card{
-
-background:#f7d0e9;
-
-margin-top:25px;
-
-padding:25px;
-
-border-radius:25px;
-
-border:3px solid #db91c1;
+    color: #d67cb5;
 
 }
 
 
+.subtitle {
 
-.portal-card h3{
-
-color:#ba5f77;
-
-}
-
-
-
-input{
-
-width:90%;
-
-padding:13px;
-
-border-radius:25px;
-
-border:none;
-
-outline:none;
-
-background:white;
-
-border:2px solid #f792c0;
+    color: #ba5f8b;
 
 }
 
 
+.card {
 
-button{
+    background: #f7d0e9;
 
-margin-top:15px;
+    margin-top: 20px;
 
-padding:13px 25px;
+    padding: 20px;
 
-border:none;
-
-border-radius:30px;
-
-background:#f589cd;
-
-color:white;
-
-font-size:15px;
-
-cursor:pointer;
-
-transition:.3s;
+    border-radius: 25px;
 
 }
 
 
+input {
 
-button:hover{
+    width: 85%;
 
-background:#d16faf;
+    padding: 12px;
 
-transform:scale(1.05);
+    border-radius: 20px;
 
-}
-
-
-
-.worker{
-
-background:#f7d0e9;
+    border: 2px solid #f792c0;
 
 }
 
 
+button {
 
-.worker p{
+    margin-top: 15px;
 
-color:#ba5f77;
+    padding: 12px 25px;
 
-font-weight:bold;
+    border-radius: 25px;
+
+    border: none;
+
+    background: #f589cd;
+
+    color: white;
+
+    cursor: pointer;
 
 }
 
 
+button:hover {
 
-/* floating sparkle effect */
+    background: #d16faf;
 
-.sparkles:before{
+    transform: scale(1.05);
 
-content:"✨ 🎀 ✨ 🎀 ✨";
+}
 
-position:absolute;
 
-top:20px;
+.coming {
 
-left:20px;
-
-font-size:25px;
-
-opacity:.7;
+    background: #f7d0e9;
 
 }
